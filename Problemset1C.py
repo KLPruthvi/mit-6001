@@ -26,7 +26,7 @@ while True: #creating an infinite loop until we say break
         print("best savings rate: ", rate)
         print("steps in bisection search: ", num_guesses)
         break
-    if high - low <= 1:
+    if high - low <= 1: # to see if that salary can save that downpayment
         print("not possible in three years.")
         break
     if current_savings > down_payment:
