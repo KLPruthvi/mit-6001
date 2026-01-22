@@ -25,7 +25,7 @@ while current_savings < portion_down_payment :
     monthly_contribution = portion_saved * monthly_salary # monthly we are earning
     current_savings = current_savings + investment_returns + monthly_contribution
     months = months + 1
-    if months % 6 == 0:
+    if months % 6 == 0: # to see if reminder is 0
         annual_salary = annual_salary + (annual_salary * semi_annual_raise)
         monthly_salary = annual_salary / 12
 print("Number of months :", months)
